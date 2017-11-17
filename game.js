@@ -26,7 +26,7 @@ function makeGreen(evt) {
 // CREATE FUNCTION makeBlue HERE
 function makeBlue(evt) {
   evt.target.classList.toggle('blue');
-  updateCounts()
+  updateCounts();
 }
 
 
@@ -74,6 +74,6 @@ for (var i = 0; i < dots.length; i++) {
 
 function displayTotals (totals) {
   for (var key in totals) {
-    document.getElementById(key + '-total').innerHTML = totals[key]
+    document.getElementById(key + '-total').innerHTML = totals[key];
   }
 }
