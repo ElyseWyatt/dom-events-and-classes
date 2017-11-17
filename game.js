@@ -4,14 +4,14 @@
 document.addEventListener('DOMContentLoaded', start)
 
 function start () {
-  bindEventListeners(document.getElementsByClassName('board')[0].children)
+  bindEventListeners(document.getElementsByClassName('board')[0].children);
 }
 
 function bindEventListeners (dots) {
   for (var i = 0; i < dots.length; i++) {
     dots[i].addEventListener('contextmenu', makeGreen)
     dots[i].addEventListener('click', makeBlue)
-    dots[i].addEventListener('dblckick', hide)
+    dots[i].addEventListener('dblclick', hide)
   }
 }
 
