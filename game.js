@@ -9,31 +9,31 @@ function start () {
 
 function bindEventListeners (dots) {
   for (var i = 0; i < dots.length; i++) {
-    dots[i].addEventListener('contextmenu', makeGreen)
-    dots[i].addEventListener('click', makeBlue)
-    dots[i].addEventListener('dblclick', hide)
+    dots[i].addEventListener('contextmenu', makeGreen);
+    dots[i].addEventListener('click', makeBlue);
+    dots[i].addEventListener('dblclick', hide);
   }
 }
 
 
 
-function makeGreen (evt) {
-  evt.preventDefault()
-  evt.target.classList.toggle('green')
-  updateCounts()
+function makeGreen(evt) {
+  evt.preventDefault();
+  evt.target.classList.toggle('green');
+  updateCounts();
 }
 
 // CREATE FUNCTION makeBlue HERE
-function makeBlue (evt){
-  evt.target.classList.toggle('blue')
+function makeBlue(evt) {
+  evt.target.classList.toggle('blue');
   updateCounts()
 }
 
 
 // CREATE FUNCTION hide HERE
-function hide (evt) {
-  evt.target.classList.toggle('invisible')
-  updateCounts()
+function hide(evt) {
+  evt.target.classList.toggle('invisible');
+  updateCounts();
 }
 
 
@@ -44,7 +44,7 @@ function updateCounts () {
     blue: 0,
     green: 0,
     invisible: 0
-  }
+  };
 
   // WRITE CODE HERE TO COUNT BLUE, GREEN, AND INVISIBLE DOTS
 
@@ -54,11 +54,11 @@ for (var i = 0; i < dots.length; i++) {
     totals.blue +=1;
   }
 
-  if dots[i].classList.contains('green')) {
+  if (dots[i].classList.contains('green')) {
     totals.green +=1;
   }
 
-  if dots[i].classList.contains('invisible')) {
+  if (dots[i].classList.contains('invisible')) {
     totals.invisible +=1;
   }
 }
@@ -69,7 +69,7 @@ for (var i = 0; i < dots.length; i++) {
 
 
   // Once you've done the counting, this function will update the display
-  displayTotals(totals)
+  displayTotals(totals);
 }
 
 function displayTotals (totals) {
